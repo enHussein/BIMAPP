@@ -8,7 +8,8 @@ const sceneComponent = new OBC.SimpleScene(viewer)
 sceneComponent.setup()
 viewer.scene = sceneComponent
 
-const viewerContainer = document.getElementById("sharepoint-viewer") as HTMLDivElement
+const viewerContainer = document.getElementById(
+  "sharepoint-viewer") as HTMLDivElement;
 const rendererComponent = new OBC.PostproductionRenderer(viewer, viewerContainer)
 viewer.renderer = rendererComponent
 const postproduction = rendererComponent.postproduction
